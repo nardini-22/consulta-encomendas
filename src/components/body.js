@@ -20,8 +20,9 @@ export default function Body() {
     };
     getData();
   }, []);
-  const newArray = () => {
+  const newArray = (element) => {
     setShowData(true);
+    element.preventDefault();
     setNewData(
       data.filter((element) => {
         return element.numero === code;
@@ -32,22 +33,23 @@ export default function Body() {
     <>
       <section id="main-section">
         <h1 id="title">Consulte sua encomenda: </h1>
-        <div id="input-wrapper">
+        <form id="input-wrapper">
           <input
             id="search-input"
             type="text"
             placeholder="Digite o número do pedido"
-            onChange={(el) => setCode(el.target.value.toUpperCase())}
+            onChange={(element) => setCode(element.target.value.toUpperCase())}
           />
           <button
+            type="submit"
             id="search-button"
-            onClick={() => {
-              newArray();
+            onClick={(element) => {
+              newArray(element);
             }}
           >
             <img alt="search" width="16" height="16" src={SearchIcon} />
           </button>
-        </div>
+        </form>
         {newData.length === 0 && showData === true ? (
           <p id="error-message">Encomenda não encontrada! Tente novamente</p>
         ) : (

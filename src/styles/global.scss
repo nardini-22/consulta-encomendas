@@ -3,6 +3,12 @@ $primary-light-color: #0099cc;
 $secondary-color: #99cc33;
 $error-color: #ff0000;
 
+@font-face {
+  font-family: "Poppins";
+  src: url("../../public/fonts/Poppins.woff") format("woff"),
+    url("../../public/fonts/Poppins.woff2") format("woff2");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +16,7 @@ $error-color: #ff0000;
 }
 
 body {
+  font-family: "Poppins", sans-serif;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -17,11 +24,14 @@ body {
   align-items: center;
 }
 
-#main-header {
-}
-
 #title {
   color: $primary-color;
+}
+
+#main-header {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0 25px 0;
 }
 
 #main-section {
@@ -77,6 +87,12 @@ body {
 
 .grid-items {
   padding: 10px;
+  @media (max-width: 600px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .grid-title {
@@ -85,6 +101,7 @@ body {
 
 .grid-subtitle {
   color: $primary-light-color;
+  margin: auto;
 }
 
 #value {
