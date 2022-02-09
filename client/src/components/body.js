@@ -12,7 +12,7 @@ export default function Body() {
       api
         .get("/encomendas")
         .then((res) => {
-          setData(res.data);
+          setData(res.data.encomendas);
         })
         .catch((err) => {
           console.log(err);
