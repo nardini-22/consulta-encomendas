@@ -1,5 +1,9 @@
 # Vaga efetiva front-end
 
+## Demo 
+
+Link: https://consulta-encomendas.herokuapp.com/
+
 ## Objetivo
 
 * Fazer a codificação do layout proposto (está dentro da pasta layout);
@@ -28,8 +32,8 @@
 * JS = Gerar em ES5 e minificado.
 
 ## Desenvolvimento
-yarn server - Para iniciar o servidor remoto;
-yarn start - Para iniciar a aplicação;
+* yarn start - Para iniciar o servidor local;
+* cd client && yarn start - Para iniciar a aplicação;
 
 ## Produção
-/* Coloque aqui os procedimentos para ambiente de produção */
+* cd client && yarn build - Para fazer a build de produção do projeto.
