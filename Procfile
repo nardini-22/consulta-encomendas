@@ -1,0 +1,1 @@
+web: json-server dados.json -w -d 750 -p 3333
