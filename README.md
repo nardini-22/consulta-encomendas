@@ -28,7 +28,8 @@
 * JS = Gerar em ES5 e minificado.
 
 ## Desenvolvimento
-/* Coloque aqui os procedimentos para ambiente de desenvolvimento */
+yarn server - Para iniciar o servidor remoto;
+yarn start - Para iniciar a aplicação;
 
 ## Produção
 /* Coloque aqui os procedimentos para ambiente de produção */
