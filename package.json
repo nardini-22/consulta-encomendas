@@ -21,6 +21,7 @@
     "eject": "react-scripts eject",
     "server": "json-server dados.json -w -d 750 -p 3333"
   },
+  "proxy": "http://localhost:3333",
   "eslintConfig": {
     "extends": [
       "react-app",
